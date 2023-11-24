@@ -42,6 +42,16 @@
 
 <body>
 
+  <!-- pop up modal  -->
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <h2 style="color: #1aa2a7;">Product Update</h2>
+        <p style="margin-top: 10px; margin-bottom: 20px;">We are actively working to complete our product. <br>Thank you for your patience!</p>
+        <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
   <!-- 
     - #HEADER
   -->
@@ -82,7 +92,7 @@
           </li>
 
           <li>
-            <a href="#" onclick="showComingSoon()" class="navbar-link">Products</a>
+            <a href="#" onclick="openModal()" class="navbar-link">Products</a>
           </li>
 
           <li>
@@ -90,7 +100,7 @@
           </li>
 
           <li>
-            <a href="#contact" class="navbar-link">Contact</a>
+            <a href="./contact.html" class="navbar-link" target="_blank">Contact</a>
           </li>
 
         </ul>
@@ -148,8 +158,6 @@
 
 
 
-
-
   <main>
     <article>
 
@@ -171,9 +179,9 @@
 
             <div class="btn-wrapper">
 
-              <a href="#" class="btn btn-primary" onclick="showComingSoon()" >Product</a>
+              <a href="#" class="btn btn-primary" onclick="openModal()" >Product</a>
 
-              <a href="#contact" class="btn btn-outline">Contact Us</a>
+              <a href="./contact.html" class="btn btn-outline" target="_blank">Contact Us</a>
 
             </div>
 
@@ -724,7 +732,7 @@
       <!-- 
         - #CTA
       -->
-
+<!-- 
       <section id="contact" class="cta" aria-label="call to action">
         <div class="container">
 
@@ -732,15 +740,13 @@
             Join our community by using our services and grow your business.
           </h2>
 
-          <a href="#" class="btn btn-primary">Try it For Free</a>
+          <a href="./contact.html" class="btn btn-primary">Try it For Free</a>
 
         </div>
       </section>
 
     </article>
-  </main>
-
-
+  </main> -->
 
 
 
@@ -777,7 +783,7 @@
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/company/unizztech/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -835,7 +841,7 @@
         </li>
 
         <li>
-          <a href="#" onclick="showComingSoon()" class="footer-link">Our Products</a>
+          <a href="#" onclick="openModal()" class="footer-link">Our Products</a>
         </li>
 
         <li>
@@ -845,19 +851,14 @@
       </ul>
 
       <div class="footer-list">
-
         <p class="h4 footer-list-title">Our Newsletter</p>
-
         <p class="footer-text">
           Subscribe to our newsletter to get our news & deals delivered to you.
         </p>
-
-        <form action="" class="input-wrapper">
+        <form action="https://formspree.io/f/mnqkkndb" method="POST" class="input-wrapper">
           <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
-
           <button type="submit" class="submit-btn">Join</button>
         </form>
-
       </div>
 
     </div>
