@@ -11,7 +11,7 @@
   -->
   <title>UnizzTech</title>
   <meta name="title" content="UnizzTech">
-  <meta name="description" content="This is a business agency html template made by codewithsadee">
+  <meta name="description" content="UnizzTech Website">
 
   <!-- 
     - favicon
@@ -51,6 +51,20 @@
         <button class="close-btn" onclick="closeModal()">Close</button>
     </div>
   </div>
+
+
+  
+  <!-- pop up modal  -->
+
+  <div class="modal-overlay" id="modalOverlayforcourses">
+    <div class="modal">
+        <h2 style="color: #1aa2a7;">Know More About Courses</h2>
+        <p style="margin-top: 10px; margin-bottom: 20px;">C/C++/JAVA/PYTHON <br> For Enquiry <a href="https://forms.gle/Ht4UAUBHrhwJEDY66" style="color: blue;">Click Here....</a></p>
+        <button class="close-btn" onclick="closeModalForCourses()">Close</button>
+    </div>
+  </div>
+
+
 
   <!-- 
     - #HEADER
@@ -109,30 +123,18 @@
           <a href="mailto:unizztech@gmail.com" class="contact-link">unizztech@gmail.com</a>
 
           <a href="tel:7709447767" class="contact-link">+91 7709447767</a>
+          <a href="tel:8421952958" class="contact-link">+91 8421952958</a>
         </div>
 
         <ul class="social-list">
-
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.linkedin.com/company/unizztech/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
+            <a href="https://instagram.com/unizztech?igshid=YTQwZjQ0NmI0OA==" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -179,7 +181,10 @@
 
             <div class="btn-wrapper">
 
-              <a href="#" class="btn btn-primary" onclick="openModal()" >Product</a>
+              <!-- <a href="#" class="btn btn-primary" onclick="openModal()" >Product</a> -->
+
+              <a href="#" class="btn btn-primary" onclick="openModalForCourses()" >Courses</a>
+
 
               <a href="./contact.html" class="btn btn-outline" target="_blank">Contact Us</a>
 
@@ -273,11 +278,11 @@
                   and user-friendly apps tailored to your specific needs and exceed expectations.
                 </p>
 
-                <a href="#" class="btn-text">
+                <!-- <a href="#" class="btn-text">
                   <span class="span">Learn More</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </a> -->
 
               </div>
             </li>
@@ -297,11 +302,11 @@
                   that engage and resonate with your audience.
                 </p>
 
-                <a href="#" class="btn-text">
+                <!-- <a href="#" class="btn-text">
                   <span class="span">Learn More</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </a> -->
 
               </div>
             </li>
@@ -321,11 +326,11 @@
                   functionality for your devices.
                 </p>
 
-                <a href="#" class="btn-text">
+                <!-- <a href="#" class="btn-text">
                   <span class="span">Learn More</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </a> -->
 
               </div>
             </li>
@@ -345,11 +350,11 @@
                   decision-making and business success.
                 </p>
 
-                <a href="#" class="btn-text">
+                <!-- <a href="#" class="btn-text">
                   <span class="span">Learn More</span>
 
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
+                </a> -->
 
               </div>
             </li>
@@ -370,7 +375,7 @@
       <section class="about" id="about" aria-labelledby="about-label">
         <div class="container">
 
-          <figure class="about-banner"  style="margin-top: 100px;">
+          <figure class="about-banner"  style="margin-top: 90px;">
             <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
               class="w-100">
           </figure>
@@ -460,7 +465,7 @@
       <section class="section feature" id="feature" aria-labelledby="feature-label">
         <div class="container">
 
-          <figure class="feature-banner">
+          <figure class="feature-banner" style="margin-top: 90px;">
             <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
               class="w-100">
           </figure>
@@ -548,7 +553,7 @@
         - #STATS
       -->
 
-      <section class="stats" aria-label="our stats">
+      <section class="stats" aria-label="our stats"  style="margin-top: 90px;">
         <div class="container">
 
           <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/product-cs.jpg')">
@@ -574,7 +579,7 @@
         - #BLOGs
       -->
       
-      <section class="section blog"  id="blog" aria-labelledby="blog-label">
+      <section class="section blog"  id="blog" aria-labelledby="blog-label" >
         <div class="container">
 
           <p class="section-subtitle" id="blog-label">Our inside news.</p>
@@ -771,25 +776,13 @@
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
             <a href="https://www.linkedin.com/company/unizztech/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://instagram.com/unizztech?igshid=YTQwZjQ0NmI0OA==" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -822,6 +815,7 @@
 
         <li>
           <a href="tel:7709447767" class="footer-link">+91 7709447767</a>
+          <a href="tel:8421952958" class="footer-link">+91 8421952958</a>
         </li>
 
       </ul>
