@@ -1,0 +1,24 @@
+[
+    {
+      "id": "INT001",
+      "name": "Anshul Malviya",
+      "startDate": "2024-01-01",
+      "awardDate": "2024-06-01",
+      "domain": "Founder & CEO"
+    },
+    {
+      "id": "INT002",
+      "name": "Manish MD",
+      "startDate": "2024-02-01",
+      "awardDate": "2024-07-01",
+      "domain": "MD"
+    },
+    {
+      "id": "INT003",
+      "name": "Tisha ji",
+      "startDate": "2024-02-01",
+      "awardDate": "2024-07-01",
+      "domain": "OM"
+    }
+  ]
+  

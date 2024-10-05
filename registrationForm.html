@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnizzTech - Develop Anything</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo-ut.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="top">
+
+  <a href="https://api.whatsapp.com/send?phone=7709447767&text=Hello%21%20I%20want%20to%20connect%20with%20you." class="floating" target="_blank">
+    <i class="fa fa-whatsapp float-button"></i>
+  </a>  
+
+    <!-- pop up modal  -->
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <h2 style="color: #1aa2a7;">Upcoming Events</h2>
+        <p style="margin-top: 10px; margin-bottom: 20px;">We are excited to bring you amazing events soon. <br>Stay tuned for more updates!</p>
+        <button class="btn btn-primary" onclick="closeModal()" style="display: block; margin: 0 auto;">Close</button>
+
+      </div>
+    </div>
+    
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <img class="logo" src="./assets/images/utl-dark-logo.png" width="300" alt="UnizzTech Learning" class="logo-dark">
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="learning.html#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="learning.html#internship" class="navbar-link" data-nav-link>Internship</a>
+          </li>
+
+          <li>
+            <a href="learning.html#project" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li>
+            <a href="#" onclick="openModal()" class="navbar-link" data-nav-link>Events</a>
+          </li>
+
+          <li>
+            <a href="learning.html#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+          <li>
+            <a href="index.html" class="btn btn-primary">Switch to UnizzTech</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+  <div style="display: flex; justify-content: center; align-items: center; height: auto; margin-top: 80px; margin-bottom: 20px;">
+    <iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSco6b3nzU0BAbaWqRn5jzFTCJA2vv7V31jgRZW6zgVKb7IiCw/viewform?embedded=true" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+  
+  <main>
+ 
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
+        <div class="container">
+
+          <p class="cta-subtitle">So What is Next?</p>
+
+          <h2 class="h2 section-title">Are You Ready? Let's grow together!</h2>
+
+          <a href="#contact" class="btn btn-secondary">Get Started</a>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Let's Contact With Us</h2>
+
+          <p class="section-text">
+            If you have any work for us or any queries related to our services, feel free to 
+            send us a message here. It's our pleasure to assist you.
+          </p>
+
+          <form action="https://formspree.io/f/mwkddpoo" method="POST" class="contact-form">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
+
+              <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field">
+
+              <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="input-field">
+            </div>
+
+            <textarea name="message" aria-label="message" placeholder="Your message...*" required
+              class="input-field"></textarea>
+
+
+            <button type="submit" class="btn btn-primary" value="Send Now">Send Message</button>
+
+            <ul class="contact-list" style="display: flex; justify-content: center; list-style: none; padding: 0;">
+
+                <li class="contact-item" style="display: flex; justify-content: center;">
+                  <div class="contact-card" style="box-shadow: none; display: flex; gap: 20px; align-items: center;">
+              
+                    <div class="card-icon">
+                      <a href="https://instagram.com/unizztech?igshid=YTQwZjQ0NmI0OA==" target="_blank" aria-label="Instagram" style="text-decoration: none;">
+                        <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                      </a>
+                    </div>
+                    
+                    <div class="card-icon">
+                      <a href="https://www.linkedin.com/company/unizztech/" target="_blank" aria-label="LinkedIn" style="text-decoration: none;">
+                        <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                      </a>
+                    </div>
+              
+                  </div>
+                </li>
+              
+              </ul>            
+
+          </form>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Mail Here</h3>
+
+                  <a href="mailto:unizztech@gmail.com" class="card-link">unizztech@gmail.com</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Visit Here</h3>
+
+                  <address class="card-address">
+                    Nagpur, Maharashtra
+                  </address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2024 All Rights Reserved by <a href="index.html" class="copyright-link">UnizzTech</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

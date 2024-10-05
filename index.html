@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnizzTech - Develop Anything</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo-ut.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body id="top">
+
+  <a href="https://api.whatsapp.com/send?phone=7709447767&text=Hello%21%20I%20want%20to%20connect%20with%20you." class="floating" target="_blank">
+    <i class="fa fa-whatsapp float-button"></i>
+  </a>  
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <img class="logo" src="./assets/images/logo-dark.png" width="180" alt="UnizzTech home" class="logo-dark">
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Product</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+          <li>
+            <a href="learning.html" class="btn btn-primary">Learning</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+<!-- Popup Mask (Background Overlay) -->
+<div class="hustle-popup-mask hustle-optin-mask" aria-hidden="true" id="popup-mask" style="display: none;"></div>
+
+<!-- Popup Content -->
+<div class="hustle-popup" id="hiring-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; background-color: transparent; text-align: center;">
+
+  <!-- Close Button -->
+  <span id="close-popup" style="cursor: pointer;position: absolute;top: -15px;right: 5px;font-size: 35px;color: black;">×</span>
+
+  <!-- Image -->
+  <img src="./assets/images/hiring-poster.png" alt="We Are Hiring" style="width: auto; height: auto; max-width: 90vw; max-height: 90vh; border-radius: 8px;">
+
+   <!-- Apply Button -->
+   <a href="learning.html#internship" class="btn btn-primary" style="position: absolute; top: 92%; left: 50%; transform: translate(-50%, -50%);">Apply Now</a>
+ 
+</div>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Welcome to</p>
+
+            <h1 class="h1 hero-title">UnizzTech</h1>
+
+            <p class="hero-text">
+              "Where Innovation Meets Custom Software Excellence"
+            </p>
+
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+
+          </div>
+
+          <figure class="hero-banner">
+            <video src="./assets/images/ut-hero.mp4" width="720" height="520" autoplay muted loop class="w-100">
+              Your browser does not support the video tag.
+          </video>
+            
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <h2 class="h2 section-title">Services We Provided</h2>
+
+          <p class="section-text">
+            The service we offer is specifically designed to meet your needs.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #13c4a1">
+                  <ion-icon name="phone-portrait"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a class="card-title">Mobile Apps Development</a>
+                </h3>
+
+                <p class="card-text">
+                  Transform your vision into reality with our expert Android development services. 
+                  We create innovative and user-friendly apps tailored to your specific needs and 
+                  exceed expectations.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #6610f2">
+                  <ion-icon name="desktop"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a class="card-title">Website for your Business</a>
+                </h3>
+
+                <p class="card-text">
+                  Build a strong online presence with our website development expertise. 
+                  We design and develop modern, responsive websites that engage and resonate with your audience.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #ffb700">
+                  <ion-icon name="bulb"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a class="card-title">Research & Development</a>
+                </h3>
+
+                <p class="card-text">
+                  Stay ahead of the curve with our research and analysis services. Gain 
+                  valuable insights and data-driven strategies for informed decision-making and business success.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #fc3549">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a class="card-title">Embedded and IOT</a>
+                </h3>
+
+                <p class="card-text">
+                  Elevate your products with our embedded systems and IoT solutions. 
+                  Our specialized services ensure seamless connectivity and smart 
+                  functionality for your devices.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #00d280">
+                  <ion-icon name="archive"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a class="card-title">Custom Softwares</a>
+                </h3>
+
+                <p class="card-text">
+                  We provide a wide range of innovative, cutting-edge custom 
+                  software solutions tailored to meet your business needs and 
+                  help it grow with your specific requirements.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon" style="background-color: #ff612f">
+                  <ion-icon name="bulb"></ion-icon>
+                </div>
+
+                <h3 class="h3">
+                  <a class="card-title">AI Solutions</a>
+                </h3>
+
+                <p class="card-text">
+                  We provide a wide range of AI solutions specifically designed 
+                  to enhance your business operations, drive growth, and adapt 
+                  seamlessly to meet your evolving requirements.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" id="project" aria-label="project">
+        <div class="container">
+
+          <h2 class="h2 section-title">Our Product</h2>
+
+          <p class="section-text">
+            Our vision is to simplify and enhance our customers' lives through innovative solutions. 
+                    </p>
+
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 1000; --height: 400;">
+                  <img src="./assets/images/product-cs.jpg" width="1000" height="400" loading="lazy"
+                    alt="Product Coming Soon" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <p class="card-subtitle">Software</p>
+
+                  <h3 class="h3">
+                    <a class="card-title">Coming Soon!</a>
+                  </h3>
+
+                  <p class="card-subtitle">We are actively working to complete our product.
+                    Thank you for your patience!</p>
+
+                  
+                </div>
+
+              </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="background: none;">
+            <img src="./assets/images/about-us.webp" alt="about banner"
+              class="img-cover" style="background: none;">
+            
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">About Us</h2>
+
+            <p class="section-text">
+              We deliver solutions that simplify the lives of our clients.
+            </p>
+
+            <p class="section-text">
+              At UnizzTech, we are passionate about software development. Our goal is to create new and helpful solutions 
+              that improve your online presence. Whether you are a startup with a big idea or a business that needs advanced software, 
+              we are here to help. and we focus on giving you the best solutions to meet your needs.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Tailored Excellence.
+
+                </p>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Seamless Integration.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Innovative Efficiency.
+                  
+                </p>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                <p class="section-text">
+                  Client-Centric Focus.                  
+                </p>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
+        <div class="container">
+
+          <p class="cta-subtitle">So What is Next?</p>
+
+          <h2 class="h2 section-title">Are You Ready? Let's get to Work!</h2>
+
+          <a href="#contact" class="btn btn-secondary">Get Started</a>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Let's Contact With Us</h2>
+
+          <p class="section-text">
+            If you have any work for us or any queries related to our services, feel free to 
+            send us a message here. It's our pleasure to assist you.
+          </p>
+
+          <form action="https://formspree.io/f/mwkddpoo" method="POST" class="contact-form">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
+
+              <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field">
+
+              <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="input-field">
+            </div>
+
+            <textarea name="message" aria-label="message" placeholder="Your message...*" required
+              class="input-field"></textarea>
+
+
+            <button type="submit" class="btn btn-primary" value="Send Now">Send Message</button>
+
+            <ul class="contact-list" style="display: flex; justify-content: center; list-style: none; padding: 0;">
+
+              <li class="contact-item" style="display: flex; justify-content: center;">
+                <div class="contact-card" style="box-shadow: none; display: flex; gap: 20px; align-items: center;">
+            
+                  <div class="card-icon">
+                    <a href="https://instagram.com/unizztech?igshid=YTQwZjQ0NmI0OA==" target="_blank" aria-label="Instagram" style="text-decoration: none;">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                  
+                  <div class="card-icon">
+                    <a href="https://www.linkedin.com/company/unizztech/" target="_blank" aria-label="LinkedIn" style="text-decoration: none;">
+                      <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+            
+                </div>
+              </li>
+            
+            </ul>            
+
+          </form>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Mail Here</h3>
+
+                  <a href="mailto:unizztech@gmail.com" class="card-link">unizztech@gmail.com</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-card">
+
+                <div class="card-icon">
+                  <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Visit Here</h3>
+
+                  <address class="card-address">
+                    Nagpur, Maharashtra
+                  </address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2024 All Rights Reserved by <a href="#" class="copyright-link">UnizzTech</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
